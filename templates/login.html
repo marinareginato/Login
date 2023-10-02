@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+        <form action="/autenticar" method="post">
+          <h1 class="h4 mb-3 fw-normal">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Por favor, faça login</font>
+            </font>
+          </h1>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com">
+            <label for="floatingInput">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Endereço de email</font>
+              </font>
+            </label>
+          </div>
+          <div class="form-floating mb-4">
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+            <label for="floatingPassword">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Senha</font>
+              </font>
+            </label>
+          </div>
+
+          <button class="btn btn-light w-100 py-2 mb-3" type="submit">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Entrar</font>
+            </font>
+          </button>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Ainda não tem conta?</font>
+          </font>
+          <a href="/cadastro">Cadastre-se</a>
+        </form>
+      
+
+
+{% endblock %}

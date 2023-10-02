@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<!-- página template(modelo) com layout base das páginas do site -->
-
 <html lang="pt">
 
 <head>
@@ -15,19 +13,14 @@
   <div class="d-flex align-items-center justify-content-center py-4 color">
     <div class="card" style="width: 24rem;">
       <div class="card-body">
-        <main class="form-signin m-auto align-items-center flex-column d-flex text-align-center justify-content-center ">
+        <main
+          class="form-signin m-auto align-items-center flex-column d-flex text-align-center justify-content-center ">
           <img class="mb-4 rounded-1" src="/static/imagens/logo.png" alt="" width="80" height="80">
-
-          <!--Informação fixa nas páginas coloca neste template -->
-
-
-          <!--Informação que muda nas páginas coloca como extensão -->
           {% block conteudo %}
 
           {% endblock %}
 </body>
 </main>
-
 </div>
 </div>
 </div>
